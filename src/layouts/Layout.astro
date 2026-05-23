@@ -16,8 +16,6 @@ interface Props {
   twitterTitle?: string;
   twitterDescription?: string;
   twitterImage?: string;
-  topbarVariant?: 'index' | 'default';
-  headerVariant?: 'index' | 'default';
 }
 
 const {
@@ -33,8 +31,6 @@ const {
   twitterTitle = "Elite Host – Premium Web Hosting Services for Your Business",
   twitterDescription = "Elite Host offers top-tier, reliable, and fast web hosting services tailored to meet the unique needs of businesses. Our hosting solutions are designed for performance, security, and scalability, ensuring your website runs smoothly 24/7.",
   twitterImage = "URL_to_image",
-  topbarVariant = "default",
-  headerVariant = "default",
 } = Astro.props;
 ---
 
@@ -80,10 +76,10 @@ const {
 <body>
 
   <!-- Topbar -->
-  <Topbar variant={topbarVariant} />
+  <Topbar />
 
   <!-- Header Navigation -->
-  <Header variant={headerVariant} />
+  <Header />
 
   <!-- Main Slot Content -->
   <slot />
