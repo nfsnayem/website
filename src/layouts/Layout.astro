@@ -1,0 +1,109 @@
+---
+import Topbar from '../components/Topbar.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  author?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogUrl?: string;
+  twitterCard?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
+  twitterImage?: string;
+  topbarVariant?: 'index' | 'default';
+  headerVariant?: 'index' | 'default';
+}
+
+const {
+  title = "Elite Host – Premium Web Hosting Services for Your Business",
+  description = "Elite Host offers top-tier, reliable, and fast web hosting services tailored to meet the unique needs of businesses. Our hosting solutions are designed for performance, security, and scalability, ensuring your website runs smoothly 24/7.",
+  keywords = "Elite Host, premium web hosting, business web hosting, reliable hosting, fast web hosting, secure web hosting, scalable hosting solutions, high-performance hosting, hosting services for businesses, 24/7 website hosting",
+  author = "RedCheap",
+  ogTitle = "Elite Host – Premium Web Hosting Services for Your Business",
+  ogDescription = "Elite Host offers top-tier, reliable, and fast web hosting services tailored to meet the unique needs of businesses. Our hosting solutions are designed for performance, security, and scalability, ensuring your website runs smoothly 24/7.",
+  ogImage = "URL_to_image",
+  ogUrl = "Your Website URL",
+  twitterCard = "summary_large_image",
+  twitterTitle = "Elite Host – Premium Web Hosting Services for Your Business",
+  twitterDescription = "Elite Host offers top-tier, reliable, and fast web hosting services tailored to meet the unique needs of businesses. Our hosting solutions are designed for performance, security, and scalability, ensuring your website runs smoothly 24/7.",
+  twitterImage = "URL_to_image",
+  topbarVariant = "default",
+  headerVariant = "default",
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="keywords" content={keywords}>
+  <meta name="author" content={author}>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={ogTitle}>
+  <meta property="og:description" content={ogDescription}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:url" content={ogUrl}>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content={twitterCard}>
+  <meta name="twitter:title" content={twitterTitle}>
+  <meta name="twitter:description" content={twitterDescription}>
+  <meta name="twitter:image" content={twitterImage}>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Local Google Font -->
+  <link rel="stylesheet" href="/css/fonts.css">
+
+  <!-- Stylesheets (Served from public/) -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link href="/css/bootstrapicon.min.css" rel="stylesheet">
+  <link href="/css/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/swiperbundle.min.css">
+  <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <Topbar variant={topbarVariant} />
+
+  <!-- Header Navigation -->
+  <Header variant={headerVariant} />
+
+  <!-- Main Slot Content -->
+  <slot />
+
+  <!-- Footer -->
+  <Footer />
+
+  <!-- Back to Top Button -->
+  <button id="scrolltoTop" class="scroll-top d-flex align-items-center justify-content-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+    </svg>
+  </button>
+
+  <!-- Legacy Scripts (Served from public/ via is:inline to guarantee global libraries work together) -->
+  <script is:inline src="/js/jquery-3.6.0.min.js"></script>
+  <script is:inline src="/js/popper.min.js"></script>
+  <script is:inline src="/js/swiper-bundle.min.js"></script>
+  <script is:inline src="/js/bootstarp.min.js"></script>
+  <script is:inline src="/js/main.js"></script>
+
+</body>
+</html>
