@@ -1859,7 +1859,7 @@ Section gap
 .plans-design-one h4 .badge-plan {
   left: 0;
   line-height: 18px;
-  top: -10px;
+  top: -20px;
   background-color: var(--color-main-two);
   display: inline-block;
   pointer-events: none;
@@ -1869,7 +1869,7 @@ Section gap
 
 .plans-design-one h4 sup {
   font-size: 60%;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .plans-design-one h4 small {
@@ -4111,11 +4111,13 @@ Domain TLD
   transition: all 0.2s ease-in-out;
   border-color: rgba(220, 230, 254, 0.7) !important;
 }
+
 .hood-feature-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(8, 17, 49, 0.04);
   border-color: var(--color-main) !important;
 }
+
 .hood-feature-card .hood-feature-icon {
   width: 40px;
   height: 40px;
@@ -4123,9 +4125,11 @@ Domain TLD
   color: var(--color-main);
   flex-shrink: 0;
 }
+
 .hood-feature-card .hood-feature-icon i {
   font-size: 16px;
 }
+
 .hood-feature-card h5 {
   font-size: 14px;
   font-weight: 600;
