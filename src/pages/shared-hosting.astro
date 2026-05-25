@@ -33,7 +33,7 @@ import Layout from '../layouts/Layout.astro';
                 <li><i class="bi bi-headset me-2"></i>24/7 Expert Support</li>
               </ul>
               <h4 class="mt-3"> <span>Starts at just</span> <sup>৳</sup> <strong>249.99</strong> <small>/mo</small> </h4>
-              <div class="inline-btns mt-3"> <a class="btns one" href="">Get Started Now<i class="far fa-arrow-right"></i></a> </div>
+              <div class="inline-btns mt-3"> <a class="btns one" href="#plans">Get Started Now<i class="far fa-arrow-right"></i></a> </div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -48,7 +48,7 @@ import Layout from '../layouts/Layout.astro';
   Plan Section
   ======================= -->
 
-  <section class="section-gap">
+  <section id="plans" class="section-gap">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -156,56 +156,313 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- =======================
-  Advanced Features Section
+  Advanced Features Section (Tabbed Style)
   ======================= -->
 
-  <section class="section-gap">
+  <section class="section-gap tab-section">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="section-header gap-bottom center">
-            <h2>Under the hood</h2>
-            <p>Every hosting plan comes with these premium features, plus many more.</p>
+            <h2>Premium Infrastructure & Features</h2>
+            <p>Every plan is equipped with elite performance, airtight security, and developer-friendly controls.</p>
           </div>
         </div>
       </div>
-      <div class="row gy-4">
-        <div class="col-lg-4 col-sm-6">
-          <h4>State-of-the-Art Servers</h4>
-          <ul class="list-check mb-0">
-            <li><span><i class="uil uil-check"></i></span><span>Dual Intel Xeon Processor E5-2630</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>64 GB RAM</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>256 GB SSD in RAID 1</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Octa Core with 2.40 GHz</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>2 TB SATA in RAID 1</span></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <h4>Program in Any Language</h4>
-          <ul class="list-check mb-0">
-            <li><span><i class="uil uil-check"></i></span><span>PHP: 8.3, 8.2 & 8.1</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Perl, Python, RoR, GD, cURL, CGI, mcrypt3</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Apache 2.4x</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>MySQL 5.7</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Ruby On Rails</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Zend Optimizer, Zend Engine, ionCube Loader</span></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <h4>Top-Notch Security</h4>
-          <ul class="list-check mb-0">
-            <li><span><i class="uil uil-check"></i></span><span>Anti Spam & Virus Protection</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Password Protect Directories</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Secure FTP Access</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>IP Blocking</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>phpMyAdmin Access</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Hotlink & Leech Protection</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Cron Jobs for Scheduled Tasks</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Customizable Error Page</span></li>
-            <li><span><i class="uil uil-check"></i></span><span>Website Statistics with AWstats</span></li>
-          </ul>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 tab-buttons">
+          <button class="tab-btn active" data-tab="hood-tab1">Server & Support</button>
+          <button class="tab-btn" data-tab="hood-tab2">Security & Performance</button>
+          <button class="tab-btn" data-tab="hood-tab3">Software & Database</button>
+          <button class="tab-btn" data-tab="hood-tab4">Developer Tools & Mail</button>
         </div>
       </div>
+
+    <div class="bg2 mt-4 tab-content-section p-3 p-md-4 shadow-sm">
+      <div class="row">
+        <div class="col-12 tab-content">
+          <!-- Tab 1: Server & Support -->
+          <div id="hood-tab1" class="tab-pane active">
+            <div class="row g-3 justify-content-center">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-badge-dollar" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">30 Day Money Back Guarantee</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-server" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">99.9% Server Uptime Guarantee</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-bolt" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">LitesSpeed Web Server</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-clock" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">1 Hour Response Time</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-headset" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">24/7 Technical Support</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-exchange-alt" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">FREE cPanel Migration</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-users-cog" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">CloudLinux / CageFS</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-network-wired" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Clustered Failover DNS</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Security & Performance -->
+          <div id="hood-tab2" class="tab-pane">
+            <div class="row g-3 justify-content-center">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-shield-check" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">20 GBPS DDoS Protection</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-search-minus" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Malware & Exploit Scanning</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-filter" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Spam Protection</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-lock" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">FREE Let's Encrypt SSL Certs</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-terminal" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">SSH Access Available</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-shield-alt" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Zend Guard Loader</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-cube" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">ionCube PHP Loader</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-code" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Server Side Includes</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Software & Database -->
+          <div id="hood-tab3" class="tab-pane">
+            <div class="row g-3 justify-content-center">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-magic" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Softaculous Script Installer</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fab fa-wordpress" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Wordpress Manager</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-sliders-h" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Latest cPanel</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-database" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Mariadb 10.x / phpMyAdmin</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-chart-line" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Awstats & Webalizer</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-hdd" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Unlimited MySQL Databases</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-cog" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">PHP Selector (5.6 - 8.x)</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-cloud" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">CloudFlare CDN</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Developer Tools & Mail -->
+          <div id="hood-tab4" class="tab-pane">
+            <div class="row g-3 justify-content-center">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fab fa-python" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Python Version Selector</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fab fa-node-js" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Node.js Version Selector</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-gem" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Ruby On Rails</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-images" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Curl / GD2 / ImageMagick</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-globe" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Unlimited Sub Domains</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-envelope-open-text" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Unlimited E-Mail Accounts</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-reply-all" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Unlimited Auto Responders</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-flex align-items-center p-3 bg-white rounded-3 border h-100 hood-feature-card" style="border-color: rgba(220, 230, 254, 0.7) !important;">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px; background-color: rgba(58, 125, 68, 0.08); color: var(--color-main); flex-shrink: 0;">
+                    <i class="fal fa-folder-open" style="font-size: 16px;"></i>
+                  </div>
+                  <h5 class="mb-0" style="font-size: 14px; font-weight: 600; color: #081131; line-height: 1.3;">Unlimited FTP Accounts</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
   <section class="section-gap pt-20">
@@ -220,38 +477,38 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="row gy-4">
         <div class="col-lg-4 col-sm-6 col-12">
-          <div class="icon-box"> <img src="/images/fast-time2.png" alt="Money Icon">
+          <div class="icon-box"> <i class="fal fa-bolt"></i>
             <h3>Lightning Fast Website</h3>
             <p>Our web application accelerator, powered by Varnish Cache, ensures the maximum performance of your website at all times!</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 col-12">
-          <div class="icon-box"> <img src="/images/email_hosting2.png" alt="Money Icon">
+          <div class="icon-box"> <i class="fal fa-envelope-open-text"></i>
             <h3>Email included</h3>
             <p>Advanced email management features in cPanel allow you manage your emails, mailing lists and more without any hassles.</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 col-12">
-          <div class="icon-box"> <img src="/images/support-icon.webp" alt="Money Icon">
+          <div class="icon-box"> <i class="fal fa-tasks"></i>
             <h3>cPanel for Management</h3>
             <p>cPanel, an intuitive and powerful control panel, is available on all plans which makes your hosting package management a breeze!</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-sm-6 col-12">
-          <div class="icon-box"> <img src="/images/support-icon.webp" alt="Money Icon">
+          <div class="icon-box"> <i class="fal fa-magic"></i>
             <h3>Instant Script Installer</h3>
             <p>Launch your perfect website in seconds. Whether you are building a blog, a forum, or an e-commerce store, our installer handles the technical heavy lifting no manual file uploads or complex database configuration required.</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 col-12">
-          <div class="icon-box"> <img src="/images/support-icon.webp" alt="Money Icon">
+          <div class="icon-box"> <i class="fal fa-history"></i>
             <h3>Automated Backups</h3>
             <p>Enjoy total peace of mind with automatic daily backups. You remain in full control of your backup schedule, and if anything goes wrong, you can restore a specific file, a folder, or your entire website with a single click.</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 col-12">
-          <div class="icon-box"> <img src="/images/support-icon.webp" alt="Money Icon">
+          <div class="icon-box"> <i class="fal fa-exchange-alt"></i>
             <h3>Seamless Migration</h3>
             <p>Move your website to us without the stress. You can rely on our migration experts to handle the transfer, or use our free automated tool for a seamless transition. Migrating a WordPress site? It takes just one click.</p>
           </div>
