@@ -4107,32 +4107,3 @@ Domain TLD
 }
 
 /* CUSTOM CSS START HERE */
-.hood-feature-card {
-  transition: all 0.2s ease-in-out;
-  border-color: rgba(220, 230, 254, 0.7) !important;
-}
-
-.hood-feature-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(8, 17, 49, 0.04);
-  border-color: var(--color-main) !important;
-}
-
-.hood-feature-card .hood-feature-icon {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(58, 125, 68, 0.08);
-  color: var(--color-main);
-  flex-shrink: 0;
-}
-
-.hood-feature-card .hood-feature-icon i {
-  font-size: 16px;
-}
-
-.hood-feature-card h5 {
-  font-size: 14px;
-  font-weight: 600;
-  color: #081131;
-  line-height: 1.3;
-}
