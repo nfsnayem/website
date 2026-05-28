@@ -2453,6 +2453,94 @@ Services
   color: #ff695a;
 }
 
+/* ==========================================================================
+   ONE-CLICK APPS LOGO LIST STYLING (MOBILE HORIZONTAL SCROLL & DESKTOP GRID)
+   ========================================================================== */
+
+/* Outer scroll wrapper */
+.apps-scroll-wrapper {
+  overflow-x: auto;
+  scrollbar-width: none;
+  /* Hide scrollbar Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar IE/Edge */
+  padding: 15px 5px;
+}
+
+.apps-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar Chrome/Safari */
+}
+
+/* Container wrapping all logos */
+.just-one-click-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual logo card */
+.just-one-click {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 130px;
+  height: 85px;
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+.just-one-click:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(5, 104, 234, 0.12);
+  border-color: rgba(5, 104, 234, 0.3);
+}
+
+.just-one-click img {
+  max-width: 100px;
+  max-height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.just-one-click:hover img {
+  transform: scale(1.05);
+}
+
+/* Mobile responsive horizontal scrolling overrides */
+@media (max-width: 767px) {
+  .just-one-click-images {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 15px;
+    width: max-content;
+    /* Forces container to keep children side-by-side */
+  }
+
+  .just-one-click {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    padding: 12px 20px;
+    height: 75px;
+    min-width: 120px;
+  }
+
+  .just-one-click img {
+    max-width: 80px;
+    max-height: 42px;
+  }
+}
+
+/* ==========================================================================
+   TECHNICAL SUPPORT / CONTACT SECTION (RESPONSIVE OVERRIDES INCLUDED)
+   ========================================================================== */
 .support {
   padding: 50px 50px;
   border-radius: 15px;
@@ -2477,6 +2565,28 @@ Services
   align-items: center;
   width: fit-content;
   gap: 50px;
+}
+
+@media (max-width: 991px) {
+  .support {
+    padding: 35px 25px;
+  }
+  .support ul {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .support {
+    padding: 30px 20px;
+  }
+  .support ul {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
 }
 
 /* ===================
@@ -4073,90 +4183,5 @@ Domain TLD
 
   .topbar ul li {
     padding: 6px 8px;
-  }
-}
-
-/* ==========================================================================
-   ONE-CLICK APPS LOGO LIST STYLING (MOBILE HORIZONTAL SCROLL & DESKTOP GRID)
-   ========================================================================== */
-
-/* Outer scroll wrapper */
-.apps-scroll-wrapper {
-  overflow-x: auto;
-  scrollbar-width: none;
-  /* Hide scrollbar Firefox */
-  -ms-overflow-style: none;
-  /* Hide scrollbar IE/Edge */
-  padding: 15px 5px;
-}
-
-.apps-scroll-wrapper::-webkit-scrollbar {
-  display: none;
-  /* Hide scrollbar Chrome/Safari */
-}
-
-/* Container wrapping all logos */
-.just-one-click-images {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Individual logo card */
-.just-one-click {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 15px 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 130px;
-  height: 85px;
-  flex-shrink: 0;
-  display: inline-flex;
-}
-
-.just-one-click:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(5, 104, 234, 0.12);
-  border-color: rgba(5, 104, 234, 0.3);
-}
-
-.just-one-click img {
-  max-width: 100px;
-  max-height: 50px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-  display: block;
-}
-
-.just-one-click:hover img {
-  transform: scale(1.05);
-}
-
-/* Mobile responsive horizontal scrolling overrides */
-@media (max-width: 767px) {
-  .just-one-click-images {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 15px;
-    width: max-content;
-    /* Forces container to keep children side-by-side */
-  }
-
-  .just-one-click {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-    padding: 12px 20px;
-    height: 75px;
-    min-width: 120px;
-  }
-
-  .just-one-click img {
-    max-width: 80px;
-    max-height: 42px;
   }
 }
